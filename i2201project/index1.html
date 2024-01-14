@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pizzaliano Webpage</title>
+    <link href="dessert.png" rel="icon">
+    <meta class="foundation-mq-small"> <!--forsmall screens-->
+    <meta class="foundation-mq-small-only"><!--forsmall screens-->
+    <meta class="foundation-mq-medium"><!--formedium screens-->
+    <meta class="foundation-mq-medium-only"><!--formedium screens-->
+    <meta class="foundation-mq-large"><!--forlarge screens-->
+    <meta class="foundation-mq-large-only"><!--forlarge screens-->
+    <meta class="foundation-mq-xlarge"><!--forxlarge screens-->
+    <meta class="foundation-mq-xlarge-only"><!--forxlarge screens-->
+    <meta class="foundation-mq-xxlarge"><!--forxxlarge screens-->
+    <meta class="foundation-data-attribute-namespace">
+    <meta name="keywords" content="Pizzaliano, Pizza , italy, fastfood, large pizza, medium pizza, small pizza, family size pizza, cheese">
+    <meta name="description" content="Welcome to Pizzaliano, where passion meets perfection in every slice. Explore our menu and savor the essence of authentic Italian pizza.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         *{
+            margin-top: 0;
+            margin-left: 0;
+            box-sizing: 0;
+         }
+           body,html{
+            margin: 0;
+            padding: 0;
+           }
+        .background{
+           width: 100%;
+           height: 100%;
+            background-image: url('background2.jpg');
+            position: absolute;
+            background-size: cover;
+            z-index: 1;
+            position: fixed;
+            background-repeat: no-repeat;
+            filter: blur(2px);
+        }
+        .list{
+            width: 100%;
+            height: 55px;
+            position: relative;
+            z-index: 2;
+            background-color: rgba(192, 27, 198, 0.604);
+            text-align: center;
+            padding-left: 4%;
+            
+        }
+        .list > a{
+            display: flex;
+            margin-top: 13px;
+            float: inline-end;
+            font-size: larger;
+            width: 20%;
+            color: rgb(251, 184, 159);
+            text-decoration: none;
+        }
+        .list > a:hover{
+            color:rgb(255, 0, 157) ;
+        }
+
+        .logo{
+                 position: relative;
+                 z-index: 1;
+                 margin-left: 33vw;
+                 overflow: hidden;
+                 max-width: 100%;
+                 height: auto;
+                 display: block;
+                 margin: 0;
+        }
+        
+        .welcoming{
+            justify-content: center;
+            position: relative;
+            font-size: 20px;
+            color: rgb(255,0,175);
+            z-index: 1;
+            -webkit-text-stroke: 0.5px;
+            -webkit-text-fill-color:white;
+        }
+        .menu{
+            width: 80vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            height: 1000px;
+            position: relative;
+            z-index: 1;
+            font-size: large;
+            padding-top: 20px;
+        }
+        table, th, td{
+            border:2px ridge rgba(242, 0, 255, 0.926);
+        }
+        table {
+            width: 100%;
+
+        }
+        th,td{
+            font-size: medium;
+            color: white;
+        }
+        body::-webkit-scrollbar{
+            display: none;
+         }
+         .foot{
+            height: 150px;
+            position: relative;
+            z-index: 1;
+        }
+        #copyright{
+            padding-top: 4vh;
+            padding-left: 2vw;
+            color: white;
+            font-size: medium;
+            
+        }
+        #designer{
+            animation-name: colorchange;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-delay: 0;
+            animation-iteration-count: infinite;
+        }
+        th:hover{
+               background-color: rgba(255, 0, 195, 0.307);
+        }
+        @keyframes colorchange {
+            0%{
+                color: rgb(123, 0, 255);
+            }
+            25%{
+                color:rgba(242, 0, 255, 0.926)
+            }
+            50%{
+                color: rgb(244, 3, 164);
+            }
+            75%{
+                color: rgb(255, 0, 166);
+            }
+            100%{
+                color: white;
+            }
+        }
+        .footer a i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer a:hover i {
+  transform: scale(1.2);
+}
+@media  screen and (max-width:600px) {
+    .foot{
+                padding-left: 5px;
+                padding-top: 10px;
+            height: 150px;
+            position: relative;
+            z-index: 1;
+        }
+        
+}
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <center><div class="list">
+        <a href="mailto:pizzaliano@gmail.com">Email</a>
+        <a href="https://wa.me/qr/5KBLWS3KX6MJF1">Contact</a>
+        <a href="https://maps.app.goo.gl/43WV8PwSqJZLfZCh6">Location</a>
+        <a href="index.html">Pizza</a>
+        <a href="index2.html">Booking</a>
+    </div>
+</center>
+    <div class="logodiv">
+        <center>
+        <img src="dessert.png" class="logo"></center>
+        
+    </div>
+    <center>
+    <div class="welcoming">
+        <p>Elevate your taste buds with our irresistible desserts and handcrafted drinks,</p>
+        <p style="margin-left: 1vw;"> a delightful symphony of sweetness in every sip and bite.</p>
+    </div>
+</center>
+
+    <div class="menu">
+     <table>
+        <tr>
+            <th>Desserts and Drinks</th>
+            <th>Size</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+           <th  rowspan="3">Strawberry Gelato</th>
+           <th>small</th>
+           <th>6$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>8$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>10$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Mixed Nut Milk Panna Cotta</th>
+            <th>small</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>8$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>10$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Chocalate and Pistachio Biscotti</th>
+            <th>small</th>
+            <th>6$</th>
+
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>8$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>10$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Pumpkin Gingersnap Tiramisu</th>
+            <th>small</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>8$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>10$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Zabagilone with Strawberries</th>
+            <th>small</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>8$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>10$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">White Peach Tart</th>
+            <th>small</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>8$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>10$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Grape Granita</th>
+            <th>small</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>8$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>10$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Aperitivo</th>
+            <th>small</th>
+            <th>4$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>5$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Negroni</th>
+            <th>small</th>
+            <th>4$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>5$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Americano</th>
+            <th>small</th>
+            <th>4$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>5$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Italian Lemonade</th>
+            <th>small</th>
+            <th>4$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>5$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>6$</th>
+        </tr>
+        <tr>
+            <th rowspan="3">Coffee</th>
+            <th>small</th>
+            <th>4$</th>
+        </tr>
+        <tr>
+            <th>medium</th>
+            <th>5$</th>
+        </tr>
+        <tr>
+            <th>large</th>
+            <th>6$</th>
+        </tr>
+     </table>
+    </div>
+    <center>
+    <div class="foot"> 
+        <div class="footer">
+             <a href="https://x.com/Majed748056?t=4qTeZX5tX_VHSw898RAG-w&s=09"><i  class="fa-brands fa-square-x-twitter" style="color:rgb(59, 63, 62);font-size:6vh; padding-top:2vh;"></i></a>
+             <a href="https://instagram.com/majedshmait?igshid=NGVhN2U2NjQ0Yg=="><i class="fa-brands fa-square-instagram" style="color:rgb(235, 15, 151);font-size:6vh;padding-left:4vw; padding-top: 2vh;"></i></a>
+             <a href="https://wa.me/qr/5KBLWS3KX6MJF1"><i class="fa-brands fa-square-whatsapp" style="font-size:6vh;padding-left: 4vw; padding-top:2vh;color: rgb(30, 194, 30);"></i></a>
+             <a href="https://www.facebook.com/majed.shmayt.54?mibextid=ZbWKwL"><i class="fa-brands fa-facebook" style="font-size:6vh;padding-left: 4vw; padding-top:2vh;color:rgb(27, 27, 187);"></i></a>
+             <a href="https://youtube.com/@majedshmait8112?si=zGtn_Ay0gflGJ8IZ"><i class="fa-brands fa-youtube" style="font-size:6vh;padding-left: 4vw; padding-top:2vh;color:rgb(236, 22, 22);"></i></a>
+             <a href="https://www.tiktok.com/@majed_l1?_t=8hg6IRiceNb&_r=1"><i class="fa-brands fa-tiktok" style="font-size:6vh;padding-left: 4vw; padding-top:2vh;color:rgb(255, 253, 252);"></i></a>
+             <b><p id="copyright" style="margin-left:-16px;">copyright &copy;2023-2024 - PIZZALIANO </p></b>
+            <p style="color:white;padding-bottom: 10px;"> Designed by <span id="designer"><strong>Majed Shmait</strong></span></p>
+    </div>
+</center>
+</body>
+</html>

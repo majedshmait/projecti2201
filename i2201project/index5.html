@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pizzaliano Webpage</title>
+    <link href="logo.png" rel="icon">
+    <meta class="foundation-mq-small"> <!--forsmall screens-->
+    <meta class="foundation-mq-small-only"><!--forsmall screens-->
+    <meta class="foundation-mq-medium"><!--formedium screens-->
+    <meta class="foundation-mq-medium-only"><!--formedium screens-->
+    <meta class="foundation-mq-large"><!--forlarge screens-->
+    <meta class="foundation-mq-large-only"><!--forlarge screens-->
+    <meta class="foundation-mq-xlarge"><!--forxlarge screens-->
+    <meta class="foundation-mq-xlarge-only"><!--forxlarge screens-->
+    <meta class="foundation-mq-xxlarge"><!--forxxlarge screens-->
+    <meta class="foundation-data-attribute-namespace">
+    <meta name="keywords" content="Pizzaliano, Pizza , italy, fastfood, large pizza, medium pizza, small pizza, family size pizza, cheese">
+    <meta name="description" content="Welcome to Pizzaliano, where passion meets perfection in every slice. Explore our menu and savor the essence of authentic Italian pizza.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-image:url('background1.jpg');
+            z-index: -1;
+            position: absolute;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            z-index: 2;
+            margin-top: 30px;
+            justify-content: center;
+            align-content: center;
+            width: 40vw;
+            height: 75vh;
+            margin-left: 28vw;
+            background-color: white;
+            border:6px solid rgb(255, 94, 0);
+            border-radius:20px;
+        }
+        #email::placeholder{
+          font-size: 2vh;
+          padding-left:1vh;
+        }
+        #email{
+            height: 3vh;
+            width: 28vw;
+            margin-top: 6px;
+        }
+        #Password::placeholder{
+          font-size: 2vh;
+          padding-left:1vh;
+        }
+        #Password{
+            height: 3vh;
+            width: 28vw;
+        }
+        #forget{
+            font-size: x-small;
+            margin-left: -23vw;
+            padding-top: 5px;
+            
+            
+        }
+        #forget > a{
+            text-decoration: none;
+        }
+        #new{
+            font-size: x-small;
+            margin-left: -22.5vw;
+            padding-top: 5px;
+            display: none;
+            
+        }
+        #new > a{
+            text-decoration: none;
+        }
+        #logo{
+            width: 22vw;
+            height: 34vh;
+            z-index: 3;
+            
+        }
+        #button{
+            width: 5vw;
+            height: 2vh;
+            margin-right: 5vw;
+            z-index: 4;
+            
+        }
+        #button{
+            float: right;
+            margin-top:43vh;
+            position: absolute;
+            top:0;
+            height: 2.8vh;
+            background-color: rgb(255, 94, 0);
+            border: 1px solid rgb(255, 94, 0);
+            border-radius: 2px;
+            margin-left: 9.2vw;
+            color:white;
+            font-size: x-small;
+        }
+        .cont{
+            height: 8vh;
+        }
+        @media  screen and (max-width:600px) {
+            .background{
+           width: 100%;
+           height: 100%;
+            background-image: url('background1.jpg');
+            position: relative;
+            background-size: cover;
+            z-index: -1;
+            position: fixed;
+            background-repeat: no-repeat;
+
+        }
+        .box{
+            z-index: 1;
+            margin-top: 30px;
+            justify-content: center;
+            align-content: center;
+            margin-right: 30vw;
+            width: 80vw;
+            height: 75vh;
+            background-color: white;
+            border:6px solid rgb(255, 94, 0);
+            border-radius:20px;
+        }
+        #email::placeholder{
+          font-size: 1vh;
+          padding-left:0.5vh;
+        }
+        #email{
+            height: 2vh;
+            width: 50vw;
+            padding-bottom: 0.5vh;
+        }
+        #Password::placeholder{
+          font-size: 1vh;
+          padding-left:0.5vh;
+        }
+        #Password{
+            height: 2vh;
+            width: 50vw;
+            padding-bottom: 0.5vh;
+            margin-top: 6px;
+        }
+        #forget{
+            font-size: x-small;
+            margin-left: -33vw;
+            padding-top: 5px; 
+        
+            
+        }
+        #forget > a{
+            text-decoration: none;
+            color: blue;
+        }
+        #new{
+            font-size: x-small;
+            margin-left: -31vw;
+            padding-top: 5px;
+        }
+        #new > a{
+            text-decoration: none;
+
+        }
+        #logo{
+            width: 75vw;
+            height: 38vh;
+            z-index: 3;
+            display: block;
+        }
+        #button{
+            float: right;
+            margin-top:28vh;
+            position: absolute;
+            top:0;
+            width:12vw;
+            height: 2vh;
+            background-color: rgb(255, 94, 0);
+            border: 1px solid rgb(255, 94, 0);
+            border-radius: 2px;
+            margin-left: 13.5vw;
+            color:white;
+            font-size: x-small;
+        }
+        }
+        </style>
+         <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function () {
+                const globalValue1 = localStorage.getItem("myGlobalVariable1");
+                const globalValue2 = localStorage.getItem("myGlobalVariable2");
+                    var butt = document.getElementById('button');
+                butt.addEventListener('click', function () {
+                    var z = document.getElementById('email');
+                    var emailvalue = z.value;
+                    localStorage.setItem("myGlobalVariable1", emailvalue);
+                    var x = document.getElementById('Password');
+                    var passvalue = x.value;
+                    localStorage.setItem("myGlobalVariable2", passvalue);
+                    console.log("Button Clicked");
+                    window.location.href = "index2.html";
+                });
+            });
+    
+        </script>
+        
+        </script>
+        </head>
+        <body>
+            <div class="background"></div>
+            <center><div class="box">
+                 <div>
+               <h1 id="login" style="margin-top: 2vh;"><i>Login</i></h1></div>
+                <p style="margin-top: 26px;" id="first"><i>New Password :</i></p>
+                <input id="email" type="text"  placeholder="**************">
+                <p style="margin-top: 30px;" id="pass"><i>Re-enter New Password :</i></p>
+                <input id="Password" type="text"  placeholder="*************">
+                <div class="cont">
+                   <button id="button" onclick="">Reset</button>
+                </div>
+                <img src="logo.png" id="logo">
+        </div></center>
+        
+        </body>
+        </html>
